@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Farmacia Moderna — Libro de quejas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&amp;family=Barlow:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="img/favicon-192.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div data-include="partials/header.html"></div>
+<main>
+  <section class="page-title form"><div class="container">
+    <nav class="breadcrumb" aria-label="Ruta de navegación"><a href="index.html">Inicio</a> <span aria-hidden="true">/</span> Libro de quejas</nav>
+    <h1 class="heading">Libro de quejas, agradecimientos, sugerencias y reclamos</h1>
+    <p class="lead">Estamos para ayudarte, dejanos tu consulta.</p>
+  </div></section>
+  <section class="form-section"><div class="container">
+    <form class="complaint-form">
+      <div class="row"><div class="field"><label for="lq-nombre">Nombre*</label><input id="lq-nombre" type="text" required></div><div class="field"><label for="lq-apellido">Apellido*</label><input id="lq-apellido" type="text" required></div></div>
+      <div class="row"><div class="field"><label for="lq-tipodoc">Tipo de documento*</label><select id="lq-tipodoc" required ><option>--Ninguno--</option><option>DNI</option><option>Pasaporte</option></select></div><div class="field"><label for="lq-doc">Número de documento*</label><input id="lq-doc" type="text" inputmode="numeric" required></div></div>
+      <div class="row"><div class="field"><label for="lq-email">Correo electrónico*</label><input id="lq-email" type="email" placeholder="Ingresá tu correo electrónico" required></div><div class="field"><label for="lq-tel">Teléfono*</label><input id="lq-tel" type="tel" placeholder="Ingresá tu teléfono" required></div></div>
+      <div class="row">
+        <div class="field"><label for="lq-canal">¿Dónde realizaste o vas a realizar tu compra?*</label><select id="lq-canal" required><option value="">Seleccioná una opción de la lista</option><option value="web">Sitio web</option><option value="sucursal">Sucursal</option></select></div>
+        <div class="field"><label for="lq-motivo">Motivo de tu consulta*</label><select id="lq-motivo" required><option value="">Seleccioná una opción de la lista</option></select></div>
+      </div>
+      <div class="row"><div class="field"><label for="lq-tipo">Tipo de consulta</label><select id="lq-tipo"  ><option>Seleccioná una opción de la lista</option><option>Consulta</option><option>Agradecimiento</option><option>Sugerencia</option><option>Queja</option></select></div><div class="field"><label for="lq-orden">Número de orden*</label><input id="lq-orden" type="text" placeholder="ej: 505854" aria-describedby="lq-orden-ayuda" required><span id="lq-orden-ayuda" class="hint">Si tu compra fue por el sitio web, ingresá tu número de orden.</span></div></div>
+      <div class="field"><label for="lq-comentarios">Comentarios</label><textarea id="lq-comentarios" rows="5" placeholder="¿Querés contarnos algo más?"></textarea></div>
+      <div class="field"><span class="label">Por favor, antes de continuar realizá la validación que ves en la imagen.*</span>
+        <div class="captcha"><input id="lq-captcha" type="checkbox"><label for="lq-captcha">No soy un robot</label></div>
+        <span class="hint">Espacio reservado para el reCAPTCHA.</span></div>
+      <div><button type="submit" class="btn">Enviar solicitud</button></div>
+    </form>
+  </div></section>
+</main>
+<div data-include="partials/footer.html"></div>
+<script src="js/main.js"></script>
+</body>
+</html>
