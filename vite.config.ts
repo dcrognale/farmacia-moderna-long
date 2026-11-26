@@ -12,7 +12,6 @@ const csp = [
   "form-action 'self' https://wa.me",
   "base-uri 'self'",
   "object-src 'none'",
-  "frame-ancestors 'none'",
 ].join('; ');
 
 function cspPlugin(): Plugin {

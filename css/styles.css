@@ -272,3 +272,6 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{ou
 .totals{margin:0;display:flex;flex-direction:column;gap:6px}
 .totals div{display:flex;justify-content:space-between;font-size:15px} .totals dt,.totals dd{margin:0}
 .totals .disc{color:var(--green)} .totals .grand{font-size:20px;font-weight:700;padding-top:8px;border-top:1px solid var(--line)}
+
+.about-img-t{font-weight:600;font-size:16px}
+.about-img-s{font-size:14px}
